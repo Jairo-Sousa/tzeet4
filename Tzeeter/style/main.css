@@ -1,0 +1,241 @@
+:root {
+  --main-text-color: #000000;
+  --basic-link-color: #585757;
+}
+
+body {
+  padding: 0.5rem;
+  background-color: white;
+  max-width: 100%;
+}
+
+nav,
+ul {
+  width: fit-content;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.smallGap {
+  gap: 1rem;
+}
+
+.logo,
+nav li {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+nav button,
+main button {
+  border-radius: 1.5rem;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+
+main button {
+  float: right;
+}
+
+nav li {
+  width: max-content;
+}
+
+nav li:hover {
+  background-color: rgba(15, 25, 20, 0.1);
+  border-radius: 1.5rem;
+}
+
+main {
+  border-left: 1px solid #5857573b;
+  border-right: 1px solid #5857573b;
+  padding: 0;
+}
+
+main .tzeet {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#estatisticas a {
+  color: var(--basic-link-color);
+}
+
+#estatisticas a span {
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+#estatisticas a:hover,
+#acoes a:hover {
+  text-decoration: underline;
+}
+
+body button,
+#publicacoes,
+#acoes {
+  margin: 0.5rem 0;
+}
+
+#publicacoes a {
+  padding: 0.5rem 0;
+}
+
+#publicacoes a {
+  flex: 1;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: var(--basic-link-color);
+}
+
+#publicacoes .flex-2 {
+  flex: 2;
+}
+
+#publicacoes a:hover {
+  background-color: #00000008;
+}
+
+#acoes a {
+  color: var(--basic-link-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+
+#acoes a:first-child:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  color: rgba(29, 155, 240, 1);
+}
+
+#acoes a:nth-child(2):hover {
+  background-color: rgba(0, 186, 124, 0.1);
+  color: rgba(0, 186, 124, 1);
+}
+
+#acoes a:nth-child(3):hover {
+  background-color: rgba(249, 24, 128, 0.1);
+  color: rgba(249, 24, 128, 1);
+}
+
+.nickname,
+.localization,
+.registrationDate,
+.tzeetDate {
+  color: var(--basic-link-color);
+}
+
+.tzeetSeparator {
+  border-bottom: 1px solid #5857573b;
+}
+
+.tzeet {
+  width: fit-content;
+  padding: 0.5rem 0;
+}
+
+.tzeet:hover {
+  background-color: #00000008;
+}
+
+#sideActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 0.5rem;
+}
+
+#friendSearch {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 1rem;
+  padding: 0.2rem 1.4rem;
+
+  margin-bottom: 1rem;
+}
+
+#friendSearch input {
+  padding: 0.8rem;
+  height: 1.5rem;
+  width: 80%;
+  border: 0;
+}
+
+#friendSearch,
+.sugestArea,
+#friendSearch input {
+  background-color: rgb(239, 243, 244);
+}
+
+.sugestArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: fit-content;
+
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.sugestArea a {
+  width: 6rem;
+  text-align: center;
+}
+
+.friendSugest {
+  padding: 0.3rem 0;
+}
+
+.friendSugest img {
+  clip-path: circle(50%);
+}
+
+#multimedia a {
+  color: black;
+  padding: 0.2rem;
+}
+
+#rightContent,
+#sendStatus a {
+  color: black;
+}
+
+#divisor {
+  border-right: 2.5px solid gray;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.replySet {
+  border-radius: 1.5rem;
+}
+
+#multimedia a,
+#sendStatus a {
+  border-radius: 0.5rem;
+}
+
+.replySet:hover,
+#multimedia a:hover,
+#sendStatus a:hover {
+  background-color: rgb(29, 155, 240);
+}
+
+@media (max-width: 575px) {
+
+  nav li,
+  nav button {
+    padding: 0.4rem 0.8rem;
+  }
+}
